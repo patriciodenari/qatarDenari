@@ -345,14 +345,6 @@ div#noticias {
     justify-content: space-around;
     }
 
-    /* INICIO SECTION NOTICIAS */
-
-    .noticias {
-    margin-top: 30px;
-    margin-left: 30px;
-    }
-    /* FIN SECTION NOTICIAS */
-
     /* -------- CALENDARIO.HTML ----------- */
 
     /* INICIO SECTION TITULO CALENDARIO */
@@ -418,10 +410,15 @@ div#noticias {
     /* INICIO SECTION CRONOGRAMA */
 
     .cronogramaContainer {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 50px;
     }
     .cronogramaItems {
-        display: none
+        display: flex;
+        flex-direction: row;
+        border: 2px solid black;
     }
 
     /* FIN SECTION CRONOGRAMA */
