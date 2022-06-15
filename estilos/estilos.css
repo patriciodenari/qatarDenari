@@ -180,7 +180,7 @@ div#noticias {
 .bombos {
     display: flex;
     margin-top: 50px;
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
     flex-wrap: wrap;
     overflow-x: auto;
@@ -200,7 +200,7 @@ div#noticias {
 .partidos {
     display: flex;
     margin-top: 50px;
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
     flex-wrap: wrap;
     overflow-x: auto;
