@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Rubik:wght@300&display=swap');
 /* ESTILOS GENERALES */
 *{
@@ -6,7 +7,7 @@
 }
 
 body {
-    background-color: aquamarine;
+    background-color: #AB374C
 }
 .ancho {
     max-width: 1100px;
@@ -47,6 +48,8 @@ body {
 
 .logo {
     border-radius: 30%;
+    height: 60px;
+    width: 60px;
 }
 
 .navContainer {
@@ -238,7 +241,7 @@ div#noticias {
     /* INICIO SECTION NOTICIAS */
 
     .noticias {
-        margin-top: 30px;
+        margin-top: 100px;
         margin-left: 30px;
     }
 
@@ -343,6 +346,11 @@ div#noticias {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    }
+
+   .imgSponsor img {
+        width: 145px;
+        height: 100px;
     }
 
     /* -------- CALENDARIO.HTML ----------- */
