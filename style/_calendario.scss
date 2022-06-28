@@ -1,0 +1,213 @@
+/* INICIO SECTION TITULO CALENDARIO */
+.tituloCalendario {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    gap: 30px;
+
+    .titulo {
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+    }
+    .imagenCalendario {
+        display: flex;
+        width: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid white;
+        }
+    }
+    
+}
+
+/* INICIO SECTION ENCABEZADOS CALENDARIO */
+.encabezadosCalendario {
+    margin-top: 50px;
+    
+    h2 {
+    margin-left: 10px;
+    color: black;
+    }
+}
+/* FIN SECTION ENCABEZADOS CALENDARIO */
+
+/* INICIO SECTION BOMBOS */
+.bombos {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+/* FIN SECTION BOMBOS */
+
+/* INICIO SECTION TITULO GRUPOS */
+.tituloGrupos {
+    margin-top: 50px;
+
+    h2 {
+        margin-left: 10px;
+        color: black;
+    }
+}
+/* FIN SECTION TITULO GRUPOS */
+
+/* INICIO SECTION PARTIDOS */
+.partidos {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-right: auto;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    color: black;
+}
+
+.grupos {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+/* FIN SECTION PARTIDOS */
+
+/* INICIO SECTION CRONOGRAMA */
+
+.cronogramaContainer {
+    margin-top: 50px;
+    display: flex;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+
+
+    .cronogramaItems {
+        display: flex;
+        width: auto;
+
+
+        img {
+            display: flex;
+            width: 100%;
+            border: 2px solid black;
+        }
+    }
+}
+/* FIN SECTION CRONOGRAMA */
+
+@media (min-width: 768px) {
+
+    /* INICIO SECTION ENCABEZADOS CALENDARIO */
+    .encabezadosCalendario h2{
+        margin-left: 20px;
+    }
+    /* FIN SECTION ENCABEZADOS CALENDARIO */
+
+    /* INICIO SECTION BOMBOS */
+    .bombos {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: auto;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    /* FIN SECTION BOMBOS */
+    /* INICIO SECTION TITULO GRUPOS */
+
+    .tituloGrupos h2 {
+        margin-left: 20px;
+    }
+    /* FIN SECTION TITULO GRUPOS */
+    /* INICIO SECTION PARTIDOS */
+    .partidos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: auto;
+        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    
+    .grupos {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    /* FIN SECTION PARTIDOS */
+}
+@media (min-width: 992px) {
+    /* INICIO SECTION TITULO CALENDARIO */
+    .tituloCalendario {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: auto;
+        margin-left: 40px;
+        margin-top: 50px;
+        gap: 30px;
+
+        .titulo {
+            font-size: 40px;
+            font-weight: bold;
+
+            .imagenCalendario {
+                display: flex;
+
+                img {
+                    width: 800px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+    /* FIN SECTION TITULO CALENDARIO */
+    
+    /* INICIO SECTION ENCABEZADOS CALENDARIO */
+        .encabezadosCalendario h2{
+            margin-left: 40px;
+        }
+    /* FIN SECTION ENCABEZADOS CALENDARIO */
+    
+    /* INICIO SECTION BOMBOS */
+    .bombos {
+        margin-left: 40px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    /* FIN SECTION BOMBOS */
+    
+    /* INICIO SECTION TITULO GRUPOS */
+    .tituloGrupos {
+        margin-top: 50px;
+
+        h2 {
+            margin-left: 40px;
+        }
+    }
+
+    /* FIN SECTION TITULO GRUPOS */
+
+    /* INICIO SECTION PARTIDOS */
+    .partidos {
+        margin-left: 40px;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .grupos {
+        margin-top: 20px;
+    }
+    /* FIN SECTION PARTIDOS */
+
+    .cronogramaContainer {
+        justify-content: center;
+    }
+}

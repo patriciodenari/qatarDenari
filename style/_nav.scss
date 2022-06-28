@@ -1,0 +1,39 @@
+/* INICIO NAV */
+
+.logo {
+    border-radius: 30%;
+    height: 60px;
+    width: 60px;
+}
+
+.navContainer {
+    font-size: 20px;
+    gap: 50px;
+    background-color: rgb(246, 243, 243);
+    border-bottom: 2px solid black;
+}
+
+.navGap {
+    gap: 15px;
+}
+
+/* FIN NAV */
+
+@media (min-width: 992px) {
+
+    /* NAV */
+    .link1:hover,
+    .link2:hover,
+    .link3:hover,
+    .link4:hover,
+    .link5:hover {
+        background-color: #d35f75;
+        color: white;
+        border-radius: 5%;
+    }
+
+    .navGap {
+        gap: 40px;
+    }
+    /* NAV */
+}

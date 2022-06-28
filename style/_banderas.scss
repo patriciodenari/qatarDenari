@@ -1,0 +1,17 @@
+.banderasContainer {
+    display: none;
+}
+
+@media (min-width: 768px ) {
+    /* INICIO DIV BANDERAS */
+    .banderasContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: lightyellow;
+        height: 100px;
+        margin-top: 50px;
+    }
+    /* FIN DIV BANDERAS */
+}
+
+
