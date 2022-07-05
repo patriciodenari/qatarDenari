@@ -11,7 +11,7 @@
    <title>Qatar | Datos</title>
 </head>
 <!-- INICIO BODY -->
-<body class="banderasMundial">
+<body>
    <nav class="navbar navbar-expand-lg navbar-light navContainer">
       <div class="container-fluid navGap">
           <a class="navbar-brand" href="../index.html">
@@ -23,78 +23,129 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav navGap">
             <li class="nav-item">
-              <a class="nav-link active link1" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link active link1" aria-current="page" href="../index.html">INICIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active link2" href="calendario.html">Calendario</a>
+              <a class="nav-link active link2" href="calendario.html">CALENDARIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active link3" href="infraestructura.html">Infraestructura</a>
+              <a class="nav-link active link3" href="infraestructura.html">INFRAESTRUCTURA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active link4" href="historia.html">Historia</a>
+              <a class="nav-link active link4" href="historia.html">HISTORIA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active link5" href="datos.html">Datos</a>
+              <a class="nav-link active link5" href="datos.html">DATOS</a>
             </li>
           </ul>
         </div>
       </div>
   </nav>
-   <h1 class="records">RECORDS</h1>
-   <h2>Párrafos</h2>
-   <!-- INICIO DIV CLASS "PARRAFOS" -->
-   <div class="parrafos">
-      <p>
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, officia vero, voluptas saepe suscipit neque pariatur harum enim voluptates veritatis laborum exercitationem quibusdam consequatur, eligendi unde aliquam dignissimos adipisci blanditiis.
-      </p>
-      <p>
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, nesciunt reiciendis. Rerum aut hic exercitationem placeat dolor. Error placeat blanditiis excepturi sint numquam inventore, porro omnis quam corporis, alias sed.
-      </p>
-      <p>
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, animi modi optio excepturi, quasi in sint consequatur ipsam tempora ex recusandae accusamus quae a cupiditate alias officiis libero possimus laborum.
-      </p>
-   </div>
-   <!-- FIN DIV CLASS "PARRAFOS" -->
-   <!-- INICIO SECTION CLASS "FORMULARIO" -->
-   <section class="formulario">
-      <p>¡Suscríbase al Newsletter para obtener la última información sobre su equipo!</p>
-      <!-- INICIO FORMULARIO -->
-      <form>
+  <h1 class="records">RECORDS</h1>
 
-        <label for="nombre-completo">Nombre Completo</label>
-        <input type="text" name="nombre-completo"> <br>
+  <div id="grillaDatos">
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+    <div>
+      <img src="https://dummyimage.com/300x500/000/fff" alt="">
+    </div>
+  </div>
 
-        <label for="e-mail">E-mail</label>
-        <input type="text" name="e-mail"> <br>
 
-        <label for="pais">País</label>
-        <input type="text" name="pais"> <br>
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
-        <input type="button" value="Sin acciones"> <br>
 
+
+
+
+
+
+
+
+
+
+  <!-- INICIO SECTION CLASS "FORMULARIO" -->
+  <section class="formulario">
+    <p>¡Suscríbase al Newsletter para obtener la última información sobre su equipo!</p>
+    <!-- INICIO FORMULARIO -->
+    <form>
+
+      <div class="form-container">
+        <div class="form-items">
+          <label for="nombre-completo">Nombre Completo</label>
+          <input type="text" name="nombre-completo">
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-items">
+          <label for="e-mail">E-mail</label>
+          <input type="text" name="e-mail" class="mail">
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-items">
+          <label for="pais">País</label>
+          <input type="text" name="pais" class="pais">
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-items">
+          <input type="submit" value="Enviar" class="boton">
+          <input type="reset" value="Limpiar" class="boton">
+          <input type="button" value="Sin acciones" class="boton">
+        </div>
+      </div>
+
+      <div class="margin-form">
         <label for="nacionalidad">Nacionalidad</label>
         <div>Argentina</div>
         <input type="radio" name="nacionalidad" value="Argentina">
         <div>Otro</div>
         <input type="radio" name="nacionalidad" value="Otro"> <br>
+      </div>
 
+      <div class="margin-form">
         <div>Equipo revelación del Mundial</div>
-         <select name="equipo">
-           <option value="Qatar">Qatar</option>
-           <option value="Dinamarca">Dinamarca</option>
-           <option value="Mexico">Mexico</option>
-           <option value="Ecuador">Ecuador</option>
-           <option value="Senegal">Senegal</option>
-           <option value="Polonia">Polonia</option>
-           <option value="Canada">Canada</option>
-         </select>
+        <select name="equipo">
+          <option value="Qatar">Qatar</option>
+          <option value="Dinamarca">Dinamarca</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Senegal">Senegal</option>
+          <option value="Polonia">Polonia</option>
+          <option value="Canada">Canada</option>
+        </select>
+      </div>
 
-         <div>Acepto términos y condiciones</div>
-         <input type="checkbox" name="acepta" value="1" /> <br>
-      </form> 
+      <div class="margin-form">
+        <div>Acepto términos y condiciones</div>
+        <input type="checkbox" name="acepta" value="1" /> <br>
+      </div>
+    </form> 
       <!-- FIN FORMULARIO -->
    </section>
    <!-- FIN SECTION CLASS "FORMULARIO" -->
@@ -108,9 +159,9 @@
       <div>© Copyright Qatar 2022</div>
     </div>
     <div class="redes">
-      <div><input type="button" value="Twitter" class="btn--twitter"></div>
-      <div><input type="button" value="Facebook" class="btn--facebook"></div>
-      <div><input type="button" value="Instagram" class="btn--instagram"></div>
+      <div><img src="../img/face-logo.png" alt="logo facebook" class="logoDatos"></div>
+      <div><img src="../img/twitter-logo.png" alt="logo twitter" class="logoDatos"></div>
+      <div><img src="../img/insta-logo.png" alt="logo instagram" class="logoDatos"></div>
     </div>
   </div>
 </footer>

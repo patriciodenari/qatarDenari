@@ -1,0 +1,305 @@
+/* INICIO SECTION CABEZADOS INFRAESTRUCTURA */
+#encabezadosInfraestructura {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-image: url(../img/soccer-football-field-stadium.jpg);
+    background-position-x: left;
+    background-position-y: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    #encabezados {
+        display: flex;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        gap: 10px;
+        font-weight: bold;
+        text-shadow: 2px 2px 2px 2px;
+
+        h1 {
+            font-size: 3rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 10rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 2rem;
+        }
+    }
+}
+/* FIN SECTION CABEZADOS INFRAESTRUCTURA */
+
+/* INICIO SECTION TEXTO UNO INFRAESTRUCTURA */
+#textoUnoInfraestructura {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 1rem;
+    font-size: 1.7rem;
+    line-height: 3.0rem;
+    color: rgb(45, 44, 44);
+    width: auto;
+    flex-wrap: wrap;
+
+    #textoUno {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* FIN SECTION TEXTO UNO INFRAESTRUCTURA */
+
+/* INICIO SECTION LISTADO ESTADIOS */
+#listadoEstadiosContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: auto;
+
+    .listadoEstadios {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 7rem;
+
+        li {
+            text-align: left;
+            font-size: 2rem;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            list-style-type: none;
+
+            img {
+                display: flex;
+                width: 100%;
+                border: 0.5rem ridge white;
+                margin: 0.5rem 0;
+            }
+
+            .parrafosImagenes {
+                width: auto;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+/* FIN SECTION LISTADO ESTADIOS */
+
+/* INICIO TEXTO DOS INFRAESTRUCTURA */
+#textoDosInfraestructura {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    line-height: 3.0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5rem;
+    color: rgb(45, 44, 44);
+    width: auto;
+
+    #textoDos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* FIN TEXTO DOS INFRAESTRUCTURA */
+
+/* INICIO SECTION DATOS QATAR */
+#datosQatar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    /* INICIO SECTION CABEZADOS INFRAESTRUCTURA */
+    #encabezadosInfraestructura {
+        #encabezados {
+            .encabezadoEstadiosUno {
+                font-size: 4rem;
+            }
+            .encabezadoEstadiosDos {
+                font-size: 3rem;
+            }
+        }
+    }
+    
+    
+    /* FIN SECTION CABEZADOS INFRAESTRUCTURA */
+
+    /* INICIO SECTION TEXTO UNO INFRAESTRUCTURA */
+    #textoUnoInfraestructura {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+        font-size: 2rem;
+        line-height: 3.0rem;
+        color: rgb(54, 54, 54);
+        width: 650px;
+    }
+    /* FIN SECTION TEXTO UNO INFRAESTRUCTURA */
+
+    /* INICIO PROPIEDADES IMAGENES LISTAS DESORDENADAS INFRAESTRUCTURA */
+     .img {
+        max-width: 85rem;
+        max-height: 40rem;
+        width: 100%;
+        height: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: 0.5rem ridge rgb(87, 87, 240);
+     }
+    /* FIN PROPIEDADES IMAGENES LISTAS DESORDENADAS INFRAESTRUCTURA */
+
+    /* TEXTOS DE LAS IMAGENES INFRAESTRUCTURAS */
+    .parrafosImagenes {
+        width: 75rem;
+    }
+    /* FIN SECTION LISTADO ESTADIOS */
+
+    /* INICIO SECTION DATOS QATAR */
+    #datosQatar {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        gap: 3rem;
+        margin-left: 2rem;
+    }
+    #datos {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 2rem;
+    }
+    .listaQatar {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+        gap: 3rem;
+    }
+    /* INICIO TEXTO TRES INFRAESTRUCTURA */
+    #textoTresInfraestructura {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        line-height: 3.0rem;
+        margin-left: 2rem;
+        color: rgb(54, 54, 54);
+        width: 370px;
+    }
+    /* FIN TEXTO TRES INFRAESTRUCTURA */
+}
+
+@media (min-width: 992px) {
+     /* INICIO SECTION CABEZADOS INFRAESTRUCTURA */
+     #encabezadosInfraestructura {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    #encabezados {
+        display: flex;
+        flex-direction: column;
+    }
+    /* h1 INFRAESTRUCTURA */
+    .encabezadoEstadiosUno {
+        font-size: 4rem;
+    }
+    /* h2 INFRAESTRUCTURA */
+    .encabezadoEstadiosDos {
+        font-size: 3rem;
+    }
+    /* FIN SECTION CABEZADOS INFRAESTRUCTURA */
+
+    /* INICIO SECTION TEXTO UNO INFRAESTRUCTURA */
+    #textoUnoInfraestructura {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+        font-size: 2rem;
+        line-height: 3.0rem;
+        color: rgb(54, 54, 54);
+        width: 80rem;
+    }
+    #textoUno {
+        display: flex;
+        flex-direction: column;
+    }
+    /* FIN SECTION TEXTO UNO INFRAESTRUCTURA */
+
+    /* INICIO SECTION LISTADO ESTADIOS */
+    #listadoEstadiosContainer {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+    }
+    .listadoEstadios {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+    }
+    .listadoEstadios li{
+        text-align: left;
+        font-size: 3rem;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        list-style-type: none 
+    }
+
+    /* INICIO PROPIEDADES IMAGENES LISTAS DESORDENADAS INFRAESTRUCTURA */
+    .estadios {
+        max-width: 85rem;
+        max-height: 40rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: 0.5rem ridge rgb(87, 87, 240);
+    }
+    /* FIN PROPIEDADES IMAGENES LISTAS DESORDENADAS INFRAESTRUCTURA */
+
+    /* TEXTOS DE LAS IMAGENES INFRAESTRUCTURAS */
+    .parrafosImagenes {
+        width: 75rem;
+    }
+    /* FIN SECTION LISTADO ESTADIOS */
+
+    /* INICIO TEXTO DOS INFRAESTRUCTURA */
+    #textoDosInfraestructura {
+        display: flex;
+        flex-direction: row;
+        font-size: 2rem;
+        line-height: 3.0rem;
+        margin-left: 2rem;
+        color: rgb(54, 54, 54);
+        width: 80rem
+    }
+    #textoDos {
+        display: flex;
+        flex-direction: column;
+    }
+    /* FIN TEXTO DOS INFRAESTRUCTURA */
+
+    /* INICIO SECTION DATOS QATAR */
+    #datosQatar {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        gap: 3rem;
+        margin-left: 2rem;
+    }
+    #datos {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 2rem;
+    }
+    .listaQatar {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+        gap: 3rem;
+    }
+}
