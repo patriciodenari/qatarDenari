@@ -1,0 +1,271 @@
+// SECTION BANDERAS
+.banderasContainer {
+    display: none;
+}
+.sponsors {
+    display: none
+}
+
+// SECTION CARRUSEL
+
+.carrusel {
+    margin-top: 100px;
+    margin-left: 5px;
+    margin-bottom: 100px;
+    margin-right: 5px;
+
+    h2 {
+        color: black;
+        font-size: 35px;
+    }
+}
+
+
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+
+    .noticiasItems {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-content: center;
+        width: auto;
+    
+        h2 {
+            font-size: 40px;
+            color: black;
+        }
+    
+        #grilla {
+            display: grid;
+            height: auto;
+            width: 100%;
+            margin-top: 30px;
+            align-items: center;        
+            grid-template-columns: auto;
+            grid-template-rows: repeat(9, auto);
+            row-gap: 30px;
+    
+            .grillaItems {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                p {
+                    background-color: black;
+                    color:white;
+                    text-align: center;
+                    margin-bottom: 0;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+// INICIO SECTION ARGENTINA
+
+.carrusel2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 100px;
+
+    h2 {
+        font-size: 30px;
+        color: black;
+    }
+}
+
+.texto-argentina{
+    width: 100%;
+    height: auto;
+    background-color: black;
+
+    p {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        text-align: center;
+        margin-left: 10px;
+        color: white;
+    }
+}
+// FIN SECTION ARGENTINA
+
+@media (min-width: 768px) {
+
+    /* INICIO DIV BANDERAS */
+    .banderasContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: lightyellow;
+        height: 100px;
+        margin-top: 50px;
+    }
+    /* FIN DIV BANDERAS */
+
+    .carrusel {
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-bottom: 100px;
+        margin-right: 20px;
+    }
+    .carousel-caption, .d-md-block {
+        h5 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .noticias {
+        text-align: center;
+        margin-top: 100px;
+        align-items: center;
+
+        .noticiasItems {
+            h2 {
+                font-size: 80px;
+            }
+            #grilla {
+                display: grid;
+                height: auto;
+                width: 100%;
+                margin-top: 30px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                row-gap: 30px;
+                column-gap: 100px;
+            
+                /* FIN SECTION NOTICIAS */
+        
+                .grillaItems {
+                    width: 300px;
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
+                    p {
+                        width: 300px;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .texto-argentina{
+    
+        p {
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            text-align: left;
+            margin-left: 10px;
+            color: white;
+        }
+    }
+
+    
+}
+
+@media (min-width: 992px) {
+    .noticias {
+        text-align: start;
+        align-items: flex-start;
+        margin-left: 40px;
+        .noticiasItems {
+            #grilla {
+                grid-template-areas:
+                "div div div"
+                "div div div"
+                "div div div";
+                grid-template-columns: repeat(3, auto);
+                grid-template-rows: repeat(3, auto);
+                
+                div {
+            
+                    &:hover {
+                        transform: scale(1.2);
+                        transition: all 2s;
+                        cursor: pointer;
+                        cursor: hand;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    // INICIO SECTION SPONSORS
+    .sponsors {
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(255, 255, 255);
+        height: 125px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+        .sponsorsItems {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .imgSponsor {
+                align-items: center;
+                width: 145px;
+                height: 100px;
+            }
+        
+            img {
+                width: 145px;
+                height: 100px;
+                align-items: center;
+            }
+
+            .imgSponsorVisa img {
+                width: 145px;
+                height: 70px;
+            }
+        }
+    }
+    // INICIO SECTION ARGENTINA 
+    .carrusel2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 50px;
+        margin-right: 500px;
+        margin-top: 100px;  
+    
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+    .texto-argentina{
+    
+        p {
+            width: auto;
+            height: auto;
+            font-size: 22px;
+            text-align: left;
+            margin-left: 10px;
+            color: white;
+        }
+    }
+}
