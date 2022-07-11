@@ -33,14 +33,13 @@
             gap: 10px;
             align-items: center;
         }
-
     }
 }
 
 /* FIN FOOTER */
 
 @media (min-width: 768px) {
-    /* INICIO FOOTER */
+
     .footerContainer {
         .footerItems {
             font-size: 15px;
@@ -53,6 +52,4 @@
             }
         }
     }
-
-    /* FIN FOOTER */
 }

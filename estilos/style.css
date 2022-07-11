@@ -61,7 +61,6 @@ body {
   border-radius: 50%;
 }
 
-/* INICIO NAV */
 .logo {
   border-radius: 30%;
   height: 70px;
@@ -83,7 +82,6 @@ body {
   gap: 15px;
 }
 
-/* FIN NAV */
 @media (min-width: 992px) {
   /* NAV */
   .link1:hover,
@@ -98,8 +96,6 @@ body {
   .navGap {
     gap: 40px;
   }
-
-  /* NAV */
 }
 .logoDatos {
   width: 40px;
@@ -137,7 +133,6 @@ body {
 
 /* FIN FOOTER */
 @media (min-width: 768px) {
-  /* INICIO FOOTER */
   .footerContainer .footerItems {
     font-size: 15px;
   }
@@ -147,9 +142,11 @@ body {
     gap: 20px;
     align-items: center;
   }
-
-  /* FIN FOOTER */
 }
+.black {
+  color: black;
+}
+
 /* INICIO SECTION TITULO CALENDARIO */
 .tituloCalendario {
   display: flex;
@@ -183,6 +180,7 @@ body {
 .encabezadosCalendario h2 {
   margin-left: 10px;
   color: black;
+  font-size: 30px;
 }
 
 /* FIN SECTION ENCABEZADOS CALENDARIO */
@@ -195,6 +193,9 @@ body {
   flex-wrap: wrap;
   overflow-x: auto;
 }
+.bombos ul {
+  font-size: 15px;
+}
 
 /* FIN SECTION BOMBOS */
 /* INICIO SECTION TITULO GRUPOS */
@@ -203,7 +204,10 @@ body {
 }
 .tituloGrupos h2 {
   margin-left: 10px;
+  margin-right: 10px;
   color: black;
+  font-size: 30px;
+  max-width: 800px;
 }
 
 /* FIN SECTION TITULO GRUPOS */
@@ -213,13 +217,16 @@ body {
   margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-right: auto;
   flex-wrap: wrap;
   overflow-x: auto;
   color: black;
+  font-size: 15px;
 }
-
-.grupos {
+.partidos h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.partidos .grupos {
   margin-top: 20px;
   margin-left: 10px;
 }
@@ -243,32 +250,24 @@ body {
   border: 2px solid black;
 }
 
-/* FIN SECTION CRONOGRAMA */
 @media (min-width: 768px) {
-  /* INICIO SECTION ENCABEZADOS CALENDARIO */
   .encabezadosCalendario h2 {
     margin-left: 20px;
   }
 
-  /* FIN SECTION ENCABEZADOS CALENDARIO */
-  /* INICIO SECTION BOMBOS */
   .bombos {
     display: flex;
     margin-top: 50px;
     margin-left: 20px;
-    margin-right: auto;
+    margin-right: inherit;
     flex-wrap: wrap;
     overflow-x: auto;
   }
 
-  /* FIN SECTION BOMBOS */
-  /* INICIO SECTION TITULO GRUPOS */
   .tituloGrupos h2 {
     margin-left: 20px;
   }
 
-  /* FIN SECTION TITULO GRUPOS */
-  /* INICIO SECTION PARTIDOS */
   .partidos {
     display: flex;
     flex-direction: column;
@@ -278,13 +277,10 @@ body {
     flex-wrap: wrap;
     overflow-x: auto;
   }
-
-  .grupos {
+  .partidos .grupos {
     margin-top: 20px;
     margin-left: 0px;
   }
-
-  /* FIN SECTION PARTIDOS */
 }
 @media (min-width: 992px) {
   /* INICIO SECTION TITULO CALENDARIO */
@@ -309,22 +305,16 @@ body {
     height: 500px;
   }
 
-  /* FIN SECTION TITULO CALENDARIO */
-  /* INICIO SECTION ENCABEZADOS CALENDARIO */
   .encabezadosCalendario h2 {
     margin-left: 40px;
   }
 
-  /* FIN SECTION ENCABEZADOS CALENDARIO */
-  /* INICIO SECTION BOMBOS */
   .bombos {
     margin-left: 40px;
     margin-top: 50px;
     flex-direction: column;
   }
 
-  /* FIN SECTION BOMBOS */
-  /* INICIO SECTION TITULO GRUPOS */
   .tituloGrupos {
     margin-top: 50px;
   }
@@ -332,19 +322,15 @@ body {
     margin-left: 40px;
   }
 
-  /* FIN SECTION TITULO GRUPOS */
-  /* INICIO SECTION PARTIDOS */
   .partidos {
     margin-left: 40px;
     margin-top: 50px;
     flex-direction: column;
   }
-
-  .grupos {
+  .partidos .grupos {
     margin-top: 20px;
   }
 
-  /* FIN SECTION PARTIDOS */
   .cronogramaContainer {
     justify-content: center;
   }
@@ -831,7 +817,7 @@ form {
   width: 100%;
   height: auto;
   border: 2px solid black;
-  background-color: lightgray;
+  background-color: lightgrey;
   font-size: 15px;
 }
 form .form-container {
@@ -872,26 +858,15 @@ form .margin-form {
   }
 
   form {
-    display: flex;
-    flex-direction: column;
     max-width: 800px;
-    height: auto;
-    border: 2px solid black;
-    background-color: lightgray;
-    font-size: 15px;
   }
   form .form-container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    margin: 10px;
   }
   form .form-container .form-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10px;
-    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -914,14 +889,6 @@ form .margin-form {
     font-size: 25px;
   }
 }
-.banderasContainer {
-  display: none;
-}
-
-.sponsors {
-  display: none;
-}
-
 .carrusel {
   margin-top: 100px;
   margin-left: 5px;
@@ -931,6 +898,18 @@ form .margin-form {
 .carrusel h2 {
   color: black;
   font-size: 35px;
+}
+
+.texto-carrusel {
+  background-color: rgba(0, 0, 0, 0.686);
+}
+.texto-carrusel h5 {
+  font-family: "Merriweather";
+  font-size: 10px;
+}
+.texto-carrusel p {
+  font-family: "Merriweather";
+  font-size: 10px;
 }
 
 .noticias {
@@ -1003,20 +982,8 @@ form .margin-form {
 }
 
 @media (min-width: 768px) {
-  /* INICIO DIV BANDERAS */
-  .banderasContainer {
-    display: flex;
-    flex-direction: row;
-    background-color: lightyellow;
-    height: 100px;
-    margin-top: 50px;
-  }
-
-  /* FIN DIV BANDERAS */
   .carrusel {
-    margin-top: 100px;
     margin-left: 20px;
-    margin-bottom: 100px;
     margin-right: 20px;
   }
 
@@ -1068,15 +1035,21 @@ form .margin-form {
   }
 }
 @media (min-width: 992px) {
+  .carrusel {
+    margin-top: 20px;
+  }
+
   .noticias {
     text-align: start;
     align-items: flex-start;
-    margin-left: 40px;
+    margin-left: 20px;
   }
   .noticias .noticiasItems #grilla {
     grid-template-areas: "div div div" "div div div" "div div div";
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
   .noticias .noticiasItems #grilla div:hover {
     transform: scale(1.2);
@@ -1085,50 +1058,18 @@ form .margin-form {
     cursor: hand;
   }
 
-  .sponsors {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(255, 255, 255);
-    height: 125px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
-  .sponsors .sponsorsItems {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .sponsors .sponsorsItems .imgSponsor {
-    align-items: center;
-    width: 145px;
-    height: 100px;
-  }
-  .sponsors .sponsorsItems img {
-    width: 145px;
-    height: 100px;
-    align-items: center;
-  }
-  .sponsors .sponsorsItems .imgSponsorVisa img {
-    width: 145px;
-    height: 70px;
-  }
-
   .carrusel2 {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-left: 50px;
+    margin-left: 20px;
     margin-right: 500px;
     margin-top: 100px;
   }
   .carrusel2 h2 {
     font-size: 50px;
   }
-
-  .texto-argentina p {
+  .carrusel2 .texto-argentina p {
     width: auto;
     height: auto;
     font-size: 22px;

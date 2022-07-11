@@ -1,13 +1,4 @@
-// SECTION BANDERAS
-.banderasContainer {
-    display: none;
-}
-.sponsors {
-    display: none
-}
-
 // SECTION CARRUSEL
-
 .carrusel {
     margin-top: 100px;
     margin-left: 5px;
@@ -20,7 +11,18 @@
     }
 }
 
+.texto-carrusel {
+    background-color: rgba(0, 0, 0, 0.686);
 
+    h5 {
+        font-family: 'Merriweather';
+        font-size: 10px;
+    }
+    p {
+        font-family: 'Merriweather';
+        font-size: 10px;
+    }
+}
 
 .noticias {
     display: flex;
@@ -104,20 +106,8 @@
 
 @media (min-width: 768px) {
 
-    /* INICIO DIV BANDERAS */
-    .banderasContainer {
-        display: flex;
-        flex-direction: row;
-        background-color: lightyellow;
-        height: 100px;
-        margin-top: 50px;
-    }
-    /* FIN DIV BANDERAS */
-
     .carrusel {
-        margin-top: 100px;
         margin-left: 20px;
-        margin-bottom: 100px;
         margin-right: 20px;
     }
     .carousel-caption, .d-md-block {
@@ -161,7 +151,6 @@
                     }
                 }
             }
-            
         }
     }
 
@@ -181,11 +170,16 @@
 }
 
 @media (min-width: 992px) {
+    .carrusel {
+        margin-top: 20px;
+    }
     .noticias {
         text-align: start;
         align-items: flex-start;
-        margin-left: 40px;
+        margin-left: 20px;
+
         .noticiasItems {
+
             #grilla {
                 grid-template-areas:
                 "div div div"
@@ -193,7 +187,8 @@
                 "div div div";
                 grid-template-columns: repeat(3, auto);
                 grid-template-rows: repeat(3, auto);
-                
+                column-gap: 30px;
+
                 div {
             
                     &:hover {
@@ -206,66 +201,30 @@
             }
         }
     }
-    
 
-    // INICIO SECTION SPONSORS
-    .sponsors {
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(255, 255, 255);
-        height: 125px;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-
-        .sponsorsItems {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-
-            .imgSponsor {
-                align-items: center;
-                width: 145px;
-                height: 100px;
-            }
-        
-            img {
-                width: 145px;
-                height: 100px;
-                align-items: center;
-            }
-
-            .imgSponsorVisa img {
-                width: 145px;
-                height: 70px;
-            }
-        }
-    }
     // INICIO SECTION ARGENTINA 
     .carrusel2 {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        margin-left: 50px;
+        margin-left: 20px;
         margin-right: 500px;
         margin-top: 100px;  
     
         h2 {
             font-size: 50px;
         }
-    }
 
-    .texto-argentina{
+        .texto-argentina{
     
-        p {
-            width: auto;
-            height: auto;
-            font-size: 22px;
-            text-align: left;
-            margin-left: 10px;
-            color: white;
+            p {
+                width: auto;
+                height: auto;
+                font-size: 22px;
+                text-align: left;
+                margin-left: 10px;
+                color: white;
+            }
         }
     }
 }
